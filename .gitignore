@@ -1,0 +1,8 @@
+# Ignored directories
+build/
+.vscode/
+
+# Ignored files
+*.txt
+*.o
+*.exe
