@@ -2,6 +2,7 @@ amr: build/main.o build/autocompletion_handlers.o build/cmd_handlers.o build/tok
 	gcc build/main.o build/autocompletion_handlers.o build/cmd_handlers.o build/tokenizers.o build/utils.o -o build/amr -lreadline
 
 build/main.o: src/main.c 
+	@mkdir -p build
 	gcc -Iinclude -c src/main.c -o build/main.o
 
 build/autocompletion_handlers.o: src/autocompletion_handlers.c 
