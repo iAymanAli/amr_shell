@@ -1,4 +1,4 @@
-<h1 style="border-bottom: none; border: none;">amr shell 👨‍💻</h1>
+# amr shell 👨‍💻
 
 # Introduction
 Hello 👋
@@ -13,7 +13,7 @@ I followed the behavior and rules of the **bash** shell which is considered the 
 # How to install and use
 
 ### Prerequisites
-Before building `amr`, ensure you have a C compiler, `make`, and the `readline` development libraries installed.
+Before building `amr`, ensure you have a C compiler (e.g. `GCC`), the GNU `make`, and the `readline` development libraries installed.
 
 ### Steps
 1. Clone the repository into your own machine.
@@ -55,7 +55,7 @@ make run
 # Features
 1. It has autocomplete for commands, directories, and file names.
 
-2. It can handle backslash, single-quotes, and double-quotes in the user input.
+2. It can handle backslash, single quotes, and double quotes in the user input.
 
 3. It has history that you can access with UP and DOWN arrows.
 
@@ -93,11 +93,11 @@ make run
 
 
 # What I learned
-In this section I will briefly list the things I learned during the process of implementing this project, and I will provide some resources that you can access if you are interested in learning these stuff.
+In this section I will briefly list the things I learned during the process of implementing this project, and I will provide some resources that you can access if you are interested in learning these topics.
 
 1. How to tokenize user input and handle single and double quotes, and how state-machine tokenizers work
 
-    Article: [Article will be published soon]
+    Article: [Article will be published soon by me]
 
 2. How to get and set environment variables
     
@@ -158,6 +158,10 @@ I welcome contributions! To maintain code quality and stability, please ensure y
 * **Test Documentation File**: Create or update a .md file (e.g., TESTING.md or inside your PR description) that lists every test case conducted, the input parameters used, and the observed results.
 
 * **Explicit Description of Changes**: Clearly document the exact scope of your work. Detail all new features added, existing functionality modified, or performance improvements made to the codebase.
+
+
+# Documentation
+If you believe that this `README.md` file or any of the documentation in this project could be improved, please don't hesitate to create an issue containing your suggestions.
 
 
 # Conclusion
