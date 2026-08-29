@@ -20,7 +20,7 @@
 int is_redirecting (char *argsv[], int argc, int mode_arr[2]);
 
 /**
- * @brief Locate the exe file in PATH, Get its absolut path, and return it.
+ * @brief Locate the exe file in PATH, Get its absolute path, and return it.
  * 
  * @param file_name: name of the program or exe file.
  * 
