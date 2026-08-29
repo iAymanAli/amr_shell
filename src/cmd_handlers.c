@@ -70,7 +70,7 @@ void handle_pwd_cmd(char *argsv[], int argc) {
         // Open the file that stdout will be redirected to.
         int out = open(argsv[file_name_index], oflags, 0644);
         if (out == -1) {
-            perror("handle_pwd_cmd(): open() error: failed to open file");
+            perror("handle_pwd_cmd(): open() error: failed to open file for redirecting stdout");
             exit(121);
         }
 
@@ -88,7 +88,7 @@ void handle_pwd_cmd(char *argsv[], int argc) {
         // Open the file that stderr will be redirected to.
         int err = open(argsv[file_name_index], oflags, 0644);
         if (err == -1) {
-            perror("handle_pwd_cmd(): open() error: failed to open file");
+            perror("handle_pwd_cmd(): open() error: failed to open file for redirecting stderr");
             exit(121);
         }
 
@@ -126,7 +126,7 @@ void handle_echo_cmd (char *argsv[], int argc) {
         // Open the file that stdout will be redirected to.
         int out = open(argsv[file_name_index], oflags, 0644);
         if (out == -1) {
-            perror("handle_echo_cmd(): open() error: failed to open file");
+            perror("handle_echo_cmd(): open() error: failed to open file for redirecting stdout");
             exit(122);
         }
 
@@ -144,7 +144,7 @@ void handle_echo_cmd (char *argsv[], int argc) {
         // Open the file that stderr will be redirected to.
         int err = open(argsv[file_name_index], oflags, 0644);
         if (err == -1) {
-            perror("handle_echo_cmd(): open() error: failed to open file");
+            perror("handle_echo_cmd(): open() error: failed to open file for redirecting stderr");
             exit(122);
         }
 
@@ -180,7 +180,7 @@ void handle_type_cmd (char *argsv[], int argc) {
         // Open the file that stdout will be redirected to.
         int out = open(argsv[file_name_index], oflags, 0644);
         if (out == -1) {
-            perror("handle_type_cmd(): open() error: failed to open file");
+            perror("handle_type_cmd(): open() error: failed to open file for redirecting stdout");
             exit(123);
         }
 
@@ -198,7 +198,7 @@ void handle_type_cmd (char *argsv[], int argc) {
         // Open the file that stderr will be redirected to.
         int err = open(argsv[file_name_index], oflags, 0644);
         if (err == -1) {
-            perror("handle_type_cmd(): open() error: failed to open file");
+            perror("handle_type_cmd(): open() error: failed to open file for redirecting stderr");
             exit(123);
         }
 
@@ -250,7 +250,7 @@ void run_executable (char *argsv[], int argc) {
         // Open the file that stdout will be redirected to.
         int out = open(argsv[file_name_index], oflags, 0644);
         if (out == -1) {
-            perror("run_executable(): open() error: failed to open file");
+            perror("run_executable(): open() error: failed to open file for redirecting stdout");
             exit(124);
         }
 
@@ -268,7 +268,7 @@ void run_executable (char *argsv[], int argc) {
         // Open the file that stderr will be redirected to.
         int err = open(argsv[file_name_index], oflags, 0644);
         if (err == -1) {
-            perror("run_executable(): open() error: failed to open file");
+            perror("run_executable(): open() error: failed to open file for redirecting stderr");
             exit(124);
         }
 
