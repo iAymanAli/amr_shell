@@ -91,7 +91,7 @@ void get_commands(void) {
         struct dirent *read_dir;
 
         // This loop reads the content of the opened directory and adds the names of the exe files as commands to commands_arr.
-        while ( (read_dir = readdir(dir_ptr)) != NULL) {
+        while ( ( read_dir = readdir(dir_ptr) ) != NULL) {
             if (read_dir->d_type == DT_DIR) {
                 /* This conditional prevent adding a directory into commands_arr */
                 continue;
@@ -280,7 +280,7 @@ char **cmd_completion (const char* text, int start, int end) {
             close(fd[0]);
         }
         else {
-            perror("cmd_completion(): fork() error: failed to fork");
+            perror("cmd_completion(): fork() error: failed to fork a child process");
             return NULL;
         }
 
